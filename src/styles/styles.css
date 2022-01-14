@@ -147,6 +147,7 @@ main{
     min-width: 230px;
     max-width: 300px;
     height: 250px;
+    margin: 0 auto;
 }
 .main-currency-table--container table{
     height: 100%;
@@ -259,7 +260,12 @@ main{
 .clock {
     background-image: url('./../../assets/icons/clock.svg');
 }
-
+.dollar {
+    background-image: url('./../../assets/icons/dollar-sign.svg');
+}
+.eye {
+    background-image: url('./../../assets/icons/eye.svg');
+}
 .product--card-title{
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -330,10 +336,10 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 20px 0;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius:15px;
@@ -401,4 +407,36 @@ main{
     height: 20px;
     background-image: url('./../../assets/icons/orange-arrow-right.svg');
     vertical-align: text-bottom;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    padding-left: 10px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+}
+footer .left ul{
+    font-size:1.4rem;
+    font-weight:500;
+    line-height:1.8rem;
+    list-style: none;
+}
+.left ul li{
+    margin: 10px 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.left ul li a:hover {
+    text-decoration: underline;
 }
